@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Forms</title>
+</head>
+<body>
+
+<form>
+<h1>Basic Input Elements</h1>
+
+<p>
+  <br> Enter your name: <input type="text">
+  <br> Enter your email: <input type="email">
+  <br> What's your lucky number? <input type="number">
+  <br> What's your birth date?: <input type="date">
+  <br> What time is it?  <input type="time">
+  <br> Select a number from this range: <input type="range">
+  <br> Choose your favorite color: <input type="color">
+  <br> What's the secret password? <input type="password">
+  <br> Search: <input type="search">
+  <br> Are you sure? <input type="checkbox" checked>
+
+</p>
+
+<p>
+  <br> What's your favorite joke?
+
+  <br> <textarea rows="7" cols="50">Default text here</textarea>
+</p>
+
+<label for=favorite-weather">> What's your favorite weather?</label>
+
+  <select>
+    <option>Sunny</option>
+    <option>Snowy</option>
+    <option>Rainy</option>
+    <option>Windy</option>
+  </select>
+</p>
+  
+<p> Upload a file: <input type="file"> </p>
+
+<label> Coke or Pepsi?</label>
+  <input name="soda" type="radio">Coke
+  <input name="soda" type="radio">Pepsi
+</p>
+
+<label> How many?</label> 
+<input id="number" type="number" value="0">
+
+<br>
+<label> Delivery or Pickup? </label>
+    <input name="delivery-method" type="radio">Delivery
+    <input name="delivery-method" type="radio">Pickup
+
+<br>
+<label>Today or later</label>
+<input id="delivery-now" name="delivery-time" type="radio">
+<label for="deliver-now">Now</label>
+<input id="delivery-later" name="delivery-time" type="radio">
+<label for="deliver-later">later</label>
+
+<br>
+<input type="submit">
+
+</form>
+</body>
+</html>
