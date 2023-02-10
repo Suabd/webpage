@@ -13,8 +13,12 @@
     // Write your script here
     let button = document.querySelector('button')
 
-    button.addEventListener('click', function() {
-    alert('You clicked the button!')
+   
+    button.addEventListener('click', function showAlert() {
+      alert('You clicked the button!')
+      button.innerHTML = 'You clicked the button!'
+      button.style.background = 'lightpink'
+      
     })
 
 </script>
