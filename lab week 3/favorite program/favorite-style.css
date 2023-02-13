@@ -1,0 +1,14 @@
+.jumbotron {
+    background-color:#07c589;
+    font-family:'Old Standard TT', serif;
+}
+
+body {
+    font-family: 'Cardo', serif;
+    background-color: #9de5ce;
+}
+
+
+img {
+    border-radius: 20%;
+  }
