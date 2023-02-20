@@ -38,6 +38,10 @@
         alert('Enter some text')
         return
        }
+       if(newText.length > 50){    // validate user has not exceed max words
+        alert('The text is too long')
+        return
+       }
        
         if (elementsInList> maxElements) {  // check the mac number is  not exceeded.
             alert('No more elements can be added')
