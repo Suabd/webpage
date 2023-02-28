@@ -1,7 +1,7 @@
 let birds = ['Owl', 'Robin', 'Eagle']
 console.log(birds)
 
-birds.forEach( function(bird: string , index:number ){
+birds.forEach( function(bird,index){
     console.log(bird.toUpperCase())
 })
 
