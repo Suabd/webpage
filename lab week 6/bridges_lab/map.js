@@ -10,7 +10,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 let goldengeIcon = L.icon({
-    iconUrl: 'marker_icons/golden.png',
+    iconUrl: 'golden.png',
     iconAnchor: [30, 30],     // move the icon so the bottom of the pin is on top of the coordiates
     iconSize: [30, 30],       // define size 
     popupAnchor: [-15, -25]   // where is popup, relative to icon
