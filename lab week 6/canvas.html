@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <style>
+        #canvas {
+          border: 1px black solid;   /* canvas is a white square by default */
+        }
+      </style>
+
+</head>
+<body>
+
+<!--The canvas element. Set height and width in HTML, and give it an id -->
+<canvas id="canvas" height="500" width="500"></canvas>
+
+<script>
+    //Find the canvas in this document
+    let canvas = document.querySelector("canvas")
+    // A context object will be used to draw on the canvas
+    let context = canvas.getContext("2d")
+    context.fillRect(20, 20, 100, 100)
+    context.strokeRect(200, 300, 100, 150)
+
+    context.fillStyle = 'green'
+    context.fillRect(400, 50, 100, 100)
+    context.strokeStyle = 'blue'
+    context.lineWidth = 20
+    context.strokeRect(350, 350, 50, 50)
+</script>
+
+</body>
+</html>
