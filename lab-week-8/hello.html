@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+
+         <dive id="app">
+        <!-- All the page that cue will mange will go here-->
+                    <h1> Hello Vue</h1>
+        
+                    <p> Orginal Message: {{ message }}</p>
+                   
+                    <p> Added Exclamation Points: {{ messageWithExclamtionPoints }}</p>
+        
+                    <!--<p>This Class is {{thisClass}}</p>-->
+        
+                    <button v-on:click="addExclamation">Add !</button>
+                    <button v-on:click="clear">Clear</button>
+        
+        </dive>
+        <script>
+
+            let app = Vue.createApp({
+                data() {
+                     return {
+                         message: 'hello',
+                         maxExaclmationPoints: 10,
+                         exclamationPoints: 0
+                        
+                    }
+                },
+                methods:{
+                    addExclamation() {
+                        if (this.exclamationPoints < this. maxExaclmationPoints){
+                        this.exclamationPoints++
+                        //this.message = this.message + '!'
+                    } else {
+                        alert('No more exclamtion points')
+                     }
+
+                    },
+
+                    clear() {
+                        //this.message = 'hello'
+                        this.exclamationPoints = 0
+                    }
+                },
+                computed: {
+                    messageWithExclamtionPoints() {
+                        let messageWithPoints = this.message 
+                        for (let x = 0 ; x < this.exclamationPoints ; x++) {
+                         messageWithPoints = messageWithPoints + '!'
+                    }
+                        return messageWithPoints
+                }
+                }
+            })
+
+            app.mount('#app')
+        </script>
+
+</body>
+</html>
